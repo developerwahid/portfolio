@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Courgette&family=IBM+Plex+Sans:ital,wght@0,100;1,300;1,400&family=Josefin+Sans:wght@300&family=Mochiy+Pop+P+One&family=Roboto+Mono:wght@200&family=Roboto:wght@100&display=swap');
+
+:root{
+    --font-familyh: 'Cinzel', serif;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    background-image: url('../image/Network.png');    
+}
+::selection{
+    color: white;
+    background-color: black;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    width: 10px;
+    background: #0c1832;
+    border-left: 0 solid white;
+    border-right: 0 solid white;
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(315deg, white 0%, #a5e4b0 74%);
+    width: 0;
+    height: 5%;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+h1,h2,h4{
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-family: var(--font-familyh);
+        text-shadow: 0 8px 12px #262626;
+}
+h5{
+    text-align: center;
+    text-transform: capitalize;
+   
+}
+.fixed-top{
+    margin: 30px 20px;
+}
+#color{
+    color: red;
+    text-shadow: none;
+}
+#border{
+    width: 160px;
+    height: 5px;
+    background: red;
+    margin: 16px auto;
+}
+form{
+    max-width: 550px;
+    width: 90%;
+    background: white;
+    margin: 17px auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+label{
+    display: block;
+    margin: 20px 0;
+}
+input, textarea{
+    border: 0;
+    background: none;
+    display: block;
+    border: 2px solid #0026ff;
+    padding: 8px 10px;
+    width: 90%; 
+    outline: none;
+    color: black;
+    transition: 0.25s;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+input[type="text"]:focus, textarea:focus,
+input[type="email"]:focus, textarea:focus,
+input[type="number"]:focus, textarea:focus{
+    width: 100%;
+    border: 2px solid #24fe41;
+    transform: skew(6deg);
+}
+
+input[type="sumbit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+    border: 2px solid #3498db;
+    outline: none;
+    color: black;
+    transition: 0.25s;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+input[type="submit"]:hover{
+    background: #2ecc71;
+    
+}
+#load{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top: 12%;
+    background-image: url('../image/Vanilla-1s-280px.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+    outline: none;   
+    visibility: visible;
+}
+ button[type="submit"] {
+    width: 100px; 
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    transition: all ease 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+button[type="submit"]:hover {
+    transition: 0.3s;
+    background-color: chartreuse;
+}

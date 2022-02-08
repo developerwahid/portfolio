@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Courgette&family=IBM+Plex+Sans:ital,wght@0,100;1,300;1,400&family=Josefin+Sans:wght@300&family=Mochiy+Pop+P+One&family=Roboto+Mono:wght@200&family=Roboto:wght@100&display=swap');
+
+:root{
+    --font-familyh: 'Cinzel', serif;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #ffffff;
+}
+::selection{
+    color: white;
+    background-color: black;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    width: 10px;
+    background: #0c1832;
+    border-left: 0 solid white;
+    border-right: 0 solid white;
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(315deg, white 0%, #a5e4b0 74%);
+    width: 0;
+    height: 5%;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+h1,h2,h4{
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 750;
+        font-family: var(--font-familyh);
+        text-shadow: 4px 0 9px #141212;
+}
+h5{
+    text-align: center;
+    text-transform: capitalize;  
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-family: var(--font-familyh);
+    text-transform: capitalize;
+    text-align: center;
+}
+#color{
+    color: #070606;
+    text-shadow: none;
+}
+/*-----main----navbar-----*/
+.navbar-toggler-icon{
+    color: red;
+}
+.navbar-toggler{
+    border: 0;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.nav-item .nav-link{
+    position: relative;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    margin: 0 10px;
+    font-family: var(--font-familyh);
+    text-transform: uppercase;
+}
+.nav-item .nav-link:hover{
+    color: fuchsia;
+}
+.nav-item .nav-link::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: brown;
+    transform: scaleX(0);
+    transform-origin:right ;
+    transition: all .4s linear;
+}
+.nav-item .nav-link:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+   
+}
+.nav-item .nav-link.active{
+    color: red;
+}
+.navbar-brand img{
+    max-width: 150px;
+    height: auto;
+    
+}
+.header-top{
+    width: 100%;
+    background: aqua;
+   
+}
+#border{
+    width: 160px;
+    height: 5px;
+    background: red;
+    margin: 16px auto;
+}
+#leftitem{
+    text-align: center;
+    margin-top: 200px;
+}
+#about{
+    margin-top: 80px ;
+}
+.buttons{
+    background: aqua;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all .5s ease-in-out;
+    box-shadow: rgba(37, 36, 36, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.buttons:hover {
+    transform: scale(1.1);
+    background-color: chartreuse;
+}
+#technolgies{
+    background-image: linear-gradient(to right, #b6fbff, white);
+}
+#blog{
+    background-image: url('../image/HTML-Project.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+.projects h2{
+    margin-top: 50px;
+    text-align: center;
+}
+.projects{
+  margin-top: 80px;
+    text-align: center;
+}
+footer{
+    background-color: aqua;
+}
+.foot-text{
+    padding-top: 40px;
+}
+.logo{
+    text-align: center;
+}
+/*------------social------icon---------*/
+.box-1 {
+    text-align: center;
+    padding-top: 30px;
+  }
+.box-1 a {
+    display: inline-block;
+    vertical-align: text-bottom;
+    text-align: center;
+    
+  }
+.box-1 a:hover i {
+    background: rgb(238, 203, 203);
+    border-radius: 5px;
+    -webkit-transform: rotate(360deg) scale(0.8);
+    transform: rotate(360deg) scale(0.8);
+  }
+.box-1 a:hover i::before {
+    -webkit-transform: rotate(-360deg) scale(0.2);
+    transform: rotate(-360deg) scale(0.2);
+  }
+.box-1 i{
+    display: inline-block;
+    font-size: 30px;
+    background: #FBD786;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    margin: 0 10px 10px 10px;
+    transition-duration: 0.3s;
+  }
+.box-1 i::before {
+    transition-duration: 0.3s;
+  }
+.box-1 i.fa::before {
+    display: block;
+  }
+
+.box-1 .facebook{
+    color: #1877F2;
+}
+.box-1 .instragram{
+   color: #E4405F;
+}
+.box-1 .twitter{
+  color: #1DA1F2;
+}
+.box-1 .linked{
+    color: #333;
+}
+.box-1 .whatsapp{
+    color: #333;
+}
+.imges{
+    height: 200px;
+    width: 300px;
+}
+.change-content::after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: rgb(0, 0, 0);
+    transform: uppercase; 
+}
+@keyframes changetext{
+    0% { content: "the";}
+    40% { content: "web desing &";}
+    70% { content: "web developer";}
+    100% { content: "front-end developer";}
+}
